@@ -1,0 +1,22 @@
+
+
+<h1>Welcome </h1>
+
+<hr>
+
+<div class="col-xs-12 col-sm-4" ng-repeat="item in gallery">
+  <div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="{{item.picture}}" alt="Card image cap" style="width:200px; height:200px" >
+    <div class="card-block">
+      <h4 class="card-title">{{item.id}}</h4>
+      <p class="card-text">{{item.about}}</p>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+<button class="btn btn-danger" ng-click="logout()"> Log Out</button>
+
+
